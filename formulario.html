@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Contacto</h1>
+    <form action="ejemplo.js" method="post">
+        <fieldset>
+            <legend class="text"><h2>Datos de contacto</h2></legend>
+            <p class="text">
+                Nombre completo
+                <input type="text" title="Escriba nombres y apellidos" name="nombre-completo" id="nombre" placeholder="Alondra Ximena Damián Hernández" size="40" required>
+            </p>
+            <p class="text">
+                Correo electronico
+                <input type="email" placeholder="info@ejemplo.com" title="Ingrese un correo electronico al que tenga acceso" size="40" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend class="text"><h2>Comentarios</h2></legend>
+            <p class="texto">
+                Observaciones 
+                <br>
+                <textarea name="" id="" cols="100" rows="10" title="Puede escribir hasta 1,000 caracteres" placeholder="Escriba sus comentarios, espere una respuesta en el correo que ingrese" required></textarea>
+            </p>
+        </fieldset>
+        <br>
+        <label for="acceptar" class="texto">
+            Acepto el uso de mis datos
+            <input type="checkbox" value=""
+            id="hola">
+        </label>
+        <br>
+        <input type="reset" value="Reiniciar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
